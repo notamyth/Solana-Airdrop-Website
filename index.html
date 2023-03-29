@@ -2,10 +2,10 @@
 <html>
 <body>
 
-<h2>HTML Forms</h2>
+<h2>Airdrop Solana to Your Wallet</h2>
 
 <form action="/action_page.php">
-  <label for="input1">Enter SOL Token:</label><br>
+  <label for="input1">Enter Wallet ID:</label><br>
   <input type="text" id="input1" name="input1" ><br>
   <button type="button" onclick="submitForm()" >Submit</button>
 </form> 
@@ -14,8 +14,8 @@
 <script>    const { Connection, PublicKey } = solanaWeb3;</script>
 <script>
 
- 
-  //https://www.youtube.com/watch?v=nOf4on9rm0Y
+  // Reference Code - https://yihau.github.io/solana-web3-demo/tour/request-airdrop.html
+  // Reference Youtube Video - https://www.youtube.com/watch?v=nOf4on9rm0Y
     function submitForm(){
         //Get The Solana Key
         var solanaPublicKey = document.getElementById("input1").value;
